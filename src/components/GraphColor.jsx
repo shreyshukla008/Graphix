@@ -82,7 +82,7 @@ const GraphColoringVisualizer = ({mainGraphData}) => {
           <h2 className='font-charted-regular text-6xl text-lime-500'>C O L O R I N G</h2>
       </div>
 
-          <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start' text-gray-300>
+          <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start'>
             <p className=' text-lg text-justify'>
               Graph coloring refers to the problem of coloring vertices of a graph in such a way that no two adjacent vertices have the same color. This is also called the vertex coloring problem. If coloring is done using at most m colors, it is called m-coloring.
             </p>

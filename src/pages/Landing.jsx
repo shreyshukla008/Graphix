@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from 'react'
 import { useNavigate  } from "react-router-dom";
+import Footer from "../components/Footer";
 
 
 const Landing = () => {
@@ -15,20 +16,21 @@ const Landing = () => {
       
 
   return (
-    <div className='w-lvw h-lvh bg-slate-950  flex justify-center items-center'>
+    <div className="w-lvw h-lvh bg-slate-950 pt-10">
+      <div className=' flex justify-center items-center'>
 
 
       <div className='flex flex-col w-[70%] gap-24 p-4 py-10 bg-[linear-gradient(45deg,_#150d1a,_#1e293b)] rounded-2xl drop-shadow-[0_30px_30px_rgba(87,184,0,0.15)]'>
 
           <div className="flex flex-col items-center justify-center gap-2">
             <h1 className="vt323-regular text-lime-500 font-bold text-8xl select-none ">Graphix</h1>
-            <p className="vt323-regular text-lime-500 font-bold text-2xl select-none ">Visualizing Graph Algorithms with Advanced 3D Graphics</p>
+            <p className="vt323-regular text-lime-500 font-bold text-2xl select-none  text-start">Visualizing Graph Algorithms with Advanced 3D Graphics</p>
           </div>
 
 
-          <div className='flex justify-center gap-8 '>
+          <div className='flex flex-col md:flex-row justify-center gap-8 '>
             <div 
-            className="relative cursor-pointer w-[50%] flex justify-center items-start p-4 mt-4"
+            className="relative cursor-pointer w-[95%]  flex justify-center items-start p-4 mt-4"
             onMouseEnter={() => setHovered("demo")}
             onMouseLeave={() => setHovered(null)}
             >
@@ -40,7 +42,7 @@ const Landing = () => {
                   </div>
                 ):
                 (
-                  <div onClick={goToHome} className="vt323-regular  text-2xl  px-20 py-8 flex items-center justify-center rounded-md text-white  h-12 bg-lime-900 hover:bg-lime-800 cursor-pointer transition-all ease-in-out duration-300">
+                  <div onClick={goToHome} className="vt323-regular w-[90%]  text-2xl px-2 md:px-20 py-8 flex items-center justify-center rounded-md text-white bg-lime-900 hover:bg-lime-800 cursor-pointer transition-all ease-in-out duration-300">
                      <button >Go to Demo Page</button>
                   </div>
                 )
@@ -50,7 +52,7 @@ const Landing = () => {
 
 
             <div 
-            className="relative cursor-pointer w-[50%] flex justify-center items-start p-4 mt-4"
+            className="relative cursor-pointer w-[95%]  flex justify-center items-start p-4 mt-4"
             onMouseEnter={() => setHovered("pg")}
             onMouseLeave={() => setHovered(null)}>
                 
@@ -62,7 +64,7 @@ const Landing = () => {
                   </div>
                 ):
                 (
-                  <div onClick={goToPG} className="vt323-regular text-2xl px-20 py-8 flex items-center justify-center rounded-md text-white  h-12 bg-lime-900 hover:bg-lime-800 cursor-pointer transition-all ease-in-out duration-300">
+                  <div onClick={goToPG} className="vt323-regular w-[90%] text-2xl px-2 md:px-20 py-8 flex items-center justify-center rounded-md text-white bg-lime-900 hover:bg-lime-800 cursor-pointer transition-all ease-in-out duration-300">
                       <button>Go to Playground Page</button>
                   </div>
                 )
@@ -72,6 +74,11 @@ const Landing = () => {
           </div>
 
       </div>
+
+      </div>
+      
+      <Footer />
+
     </div>
   )
 }

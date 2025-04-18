@@ -51,7 +51,7 @@ const MinSpanningTreeVisualizer = ({mainGraphData}) => {
           <h2 className='font-charted-regular text-6xl text-lime-500'>T R E E</h2>
       </div>
 
-          <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start' text-gray-300>
+          <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start'>
             <p className=' text-lg text-justify'>
             A spanning tree is defined as a tree-like subgraph of a connected, undirected graph that includes all the vertices of the graph. Or, to say in Layman’s words, it is a subset of the edges of the graph that forms a tree (acyclic) where every node of the graph is a part of the tree.
             </p>

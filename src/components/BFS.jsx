@@ -51,7 +51,7 @@ const BfsVisualizer = ({mainGraphData}) => {
             <h2 className='font-charted-regular text-6xl text-lime-500'>S E A R C H</h2>
           </div>
 
-              <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start' text-gray-300>
+              <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start'>
                 <p className=' text-lg text-justify'>
                  Breadth First Search (BFS) is a fundamental graph traversal algorithm. It begins with a node, then first traverses all its adjacent. Once all adjacent are visited, then their adjacent are traversed.
                 </p>
@@ -86,7 +86,7 @@ const BfsVisualizer = ({mainGraphData}) => {
                   onChange={(e) => setStartNode(Number(e.target.value))}
                   className='bg-slate-600 text-lime-500 w-[40%] p-2 rounded-lg'
                 >
-                  <option value='-1' selected>
+                  <option value='-1'>
                     #id
                   </option>
                   {Object.keys(initialGraph).map((node) => (

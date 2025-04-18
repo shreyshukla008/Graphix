@@ -55,7 +55,7 @@ const DynamicPathVisualizer = ({mainGraphData}) => {
         <h2 className='font-charted-regular text-6xl text-lime-500'>D I J K S T R A</h2>
       </div>
 
-          <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start' text-gray-300>
+          <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start'>
             <p className='text-justify text-lg'>
             Dijkstra's algorithm is a method for finding the shortest paths between nodes in a graph, which can represent various networks such as road networks. It was developed by computer scientist Edsger W. Dijkstra in 1956. The algorithm starts at a source node and iteratively explores the graph, updating the shortest known distances to each node until all nodes are visited or the target node is reached. It maintains a set of visited nodes and uses a greedy approach to select the next node with the smallest tentative distance from the source.
             </p>

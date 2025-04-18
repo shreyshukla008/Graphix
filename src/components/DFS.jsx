@@ -57,7 +57,7 @@ const DfsVisualizer = ({mainGraphData}) => {
           <h2 className='font-charted-regular text-6xl text-lime-500'>S E A R C H</h2>
       </div>
 
-    <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start' text-gray-300>
+    <div className='vt323-regular text-slate-300 text-lg flex flex-col gap-4 items-start'>
       <p className=' text-lg text-justify'>
         In Depth First Search (or DFS) for a graph, we traverse all adjacent vertices one by one. When we traverse an adjacent vertex, we completely finish the traversal of all vertices reachable through that adjacent vertex. 
       </p>
@@ -91,7 +91,7 @@ const DfsVisualizer = ({mainGraphData}) => {
               onChange={(e) => setStartNode(Number(e.target.value))}
               className='bg-slate-600 text-lime-500 w-[40%] p-2 rounded-lg'
             >
-              <option value={-1} selected>
+              <option value={-1}>
                 #id
               </option>
               {Object.keys(graph).map((node) => (
