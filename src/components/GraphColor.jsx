@@ -77,7 +77,7 @@ const GraphColoringVisualizer = ({mainGraphData}) => {
   return (
     <div id='color' className='flex flex-col gap-14'>
 
-<     div className='flex justify-start gap-4'>
+<     div className='flex flex-wrap justify-start gap-4'>
           <h2 className='font-charted-regular text-6xl text-lime-500'>G R A P H</h2>
           <h2 className='font-charted-regular text-6xl text-lime-500'>C O L O R I N G</h2>
       </div>

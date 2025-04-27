@@ -16,8 +16,9 @@ const Landing = () => {
       
 
   return (
-    <div className="w-lvw h-lvh bg-slate-950 pt-10">
-      <div className=' flex justify-center items-center'>
+    <div className="w-lvw min-h-lvh flex-col justify-between lg:pt-20 bg-slate-950 pt-10">
+      
+      <div className=' flex justify-center items-center' >
 
 
       <div className='flex flex-col w-[70%] gap-24 p-4 py-10 bg-[linear-gradient(45deg,_#150d1a,_#1e293b)] rounded-2xl drop-shadow-[0_30px_30px_rgba(87,184,0,0.15)]'>
@@ -77,7 +78,9 @@ const Landing = () => {
 
       </div>
       
-      <Footer />
+      <div className="md:pt-24">
+        <Footer />
+      </div>
 
     </div>
   )

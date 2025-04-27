@@ -45,7 +45,7 @@ const BfsVisualizer = ({mainGraphData}) => {
     return (
         <div id="bfs" className='flex flex-col gap-14'>
 
-          <div className='flex justify-start gap-4'>
+          <div className='flex flex-wrap  justify-start gap-4'>
             <h2 className='font-charted-regular text-6xl text-lime-500'>B R E A D T H</h2>
             <h2 className='font-charted-regular text-6xl text-lime-500'>F I R S T </h2>
             <h2 className='font-charted-regular text-6xl text-lime-500'>S E A R C H</h2>
@@ -86,7 +86,7 @@ const BfsVisualizer = ({mainGraphData}) => {
                   onChange={(e) => setStartNode(Number(e.target.value))}
                   className='bg-slate-600 text-lime-500 w-[40%] p-2 rounded-lg'
                 >
-                  <option value='-1'>
+                  <option value={-1}>
                     #id
                   </option>
                   {Object.keys(initialGraph).map((node) => (

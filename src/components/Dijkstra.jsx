@@ -51,7 +51,7 @@ const DynamicPathVisualizer = ({mainGraphData}) => {
   return (
     <div id='dijkstra' className='flex flex-col gap-14'>
 
-      <div className='flex justify-start'>
+      <div className='flex flex-wrap  justify-start'>
         <h2 className='font-charted-regular text-6xl text-lime-500'>D I J K S T R A</h2>
       </div>
 
