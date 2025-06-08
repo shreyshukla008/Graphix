@@ -2,7 +2,7 @@
 
 **Graphix** (aka **Graphiti**) is a frontend-only graph algorithm visualizer built with **React** and **Redux**, designed to help users **learn and simulate graph traversal and optimization techniques**. It offers two modes—**Playground** and **Demo**—to visualize five different algorithms with step-by-step animations and console insights.
 
-🌐 **Hosted on**: [Vercel](https://vercel.com)
+🌐 **Hosted on**: [Vercel]
 
 ---
 
